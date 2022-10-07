@@ -8,9 +8,9 @@ import (
 )
 
 func TestBubbleSort(t *testing.T) {
-	ints := utils.GenerateRandomInts(10)
-	BubbleSort(ints)
-	if !sort.IntsAreSorted(ints) {
+	arr := utils.GenerateRandomInts(10)
+	BubbleSort(arr)
+	if !sort.IntsAreSorted(arr) {
 		t.Errorf("BubbleSort failed")
 	}
 }
