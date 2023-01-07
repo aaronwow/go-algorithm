@@ -15,3 +15,7 @@ func GenerateRandomInts(n int) []int {
 	}
 	return ints
 }
+
+func GenerateRandomInt(max int) int {
+	return rand.Intn(max)
+}
