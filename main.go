@@ -3,5 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(5/2 == 2)
+	a := "abc"
+	fmt.Println(a[1] - 'a')
 }
