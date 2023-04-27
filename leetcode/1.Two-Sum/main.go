@@ -1,13 +1,13 @@
 package algorithm
 
 func twoSum(nums []int, target int) []int {
-	cache := map[int]bool{}
+	cache := map[int]int{}
 
-	for _, v := range nums {
-		if cache[target-v] {
-			return []int{target - v, v}
+	for i, v := range nums {
+		if _, ok := cache[target-v]; ok {
+			return []int{cache[target-v], i}
 		}
-		cache[v] = true
+		cache[v] = i
 	}
 	return []int{}
 }
